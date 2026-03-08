@@ -69,3 +69,4 @@ public class Main {
 
   // System.out.println("Nama Cafenya adalah : " + cafe3.nama);
   // System.out.println("Alamatnya ada di : " + cafe3.alamat);
+  // test
