@@ -1,21 +1,28 @@
 package latihan_pbo.latihan4;
 
 public class Menu {
-    protected String namaMakanan;
-    protected double harga;
+    private String nama;
 
-    public Menu(String namaMakanan, double harga) {
-        this.namaMakanan = namaMakanan;
-        this.harga = harga;
+    public Menu(String nama) {
+        this.nama = nama;
     }
 
-    public void tampilkanInfo() {
-        System.out.println("Nama Makanan : " + namaMakanan);
-        System.out.println("Harga        : Rp " + harga);
+    // Encapsulation: Getter dan Setter
+    public String getNama() {
+        return nama;
     }
 
-    // Method yang akan di-override (Polymorphism)
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Method hitungTotal dengan nilai default 0 (belum diketahui)
     public double hitungTotal() {
         return 0;
+    }
+
+    // Method untuk menampilkan informasi dasar
+    public void tampilkan() {
+        System.out.print(nama);
     }
 }
